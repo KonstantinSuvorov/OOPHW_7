@@ -14,6 +14,7 @@ public class ComplexNumber {
             this.real = real;
             this.imagine = imagine;
         }
+        
         public void add(ComplexNumber z){
             set(add(this, z));
         }
@@ -22,7 +23,9 @@ public class ComplexNumber {
             set(substract(this, z));
         }
 
-        public void multiple(ComplexNumber z){set(multiple(this,z));}
+        public void multiple(ComplexNumber z){
+                set(multiple(this,z));
+        }
 
         public void set(ComplexNumber z)
         {
