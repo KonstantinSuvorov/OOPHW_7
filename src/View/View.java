@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class View {
 
-    public void StartCalc() {
+    public void Calc() {
         Loger loger = new Loger();
 
         Scanner scanner = new Scanner(System.in);

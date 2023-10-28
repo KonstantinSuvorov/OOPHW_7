@@ -14,36 +14,33 @@ public class ComplexNumber {
             this.real = real;
             this.imagine = imagine;
         }
-        
-        public void add(ComplexNumber z){
-            set(add(this, z));
+        public void add(ComplexNumber x){
+            set(add(this, x));
         }
 
-        public void substract(ComplexNumber z){
-            set(substract(this, z));
+        public void substract(ComplexNumber x){
+            set(substract(this, x));
         }
 
-        public void multiple(ComplexNumber z){
-                set(multiple(this,z));
-        }
+        public void multiple(ComplexNumber x){set(multiple(this,x));}
 
-        public void set(ComplexNumber z)
+        public void set(ComplexNumber x)
         {
-            this.real = z.real;
-            this.imagine = z.imagine;
+            this.real = x.real;
+            this.imagine = x.imagine;
         }
 
-        public static ComplexNumber add(ComplexNumber z1, ComplexNumber z2)
+        public static ComplexNumber add(ComplexNumber x1, ComplexNumber x2)
         {
-            return new ComplexNumber(z1.real + z2.real, z1.imagine + z2.imagine);
+            return new ComplexNumber(x1.real + x2.real, x1.imagine + x2.imagine);
         }
 
-        public static ComplexNumber substract(ComplexNumber z1, ComplexNumber z2)
+        public static ComplexNumber substract(ComplexNumber x1, ComplexNumber x2)
         {
-            return new ComplexNumber(z1.real - z2.real, z1.imagine - z2.imagine);
+            return new ComplexNumber(x1.real - x2.real, x1.imagine - x2.imagine);
         }
-        public static ComplexNumber multiple(ComplexNumber z1, ComplexNumber z2){
-            return new ComplexNumber(z1.real * z2.real - z1.imagine * z2.imagine, z1.real* z2.imagine + z1.imagine * z2.real);
+        public static ComplexNumber multiple(ComplexNumber x1, ComplexNumber x2){
+            return new ComplexNumber(x1.real * x2.real - x1.imagine * x2.imagine, x1.real* x2.imagine + x1.imagine * x2.real);
 
         }
 
