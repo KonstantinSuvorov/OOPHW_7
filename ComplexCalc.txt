@@ -1,40 +1,4 @@
-Sat Oct 28 13:29:06 GMT+03:00 2023
- Исполнена математическая операция - >>> Summa of complex numbers 
-result of Math Complex Numbers 5.0+8.0i
-Sat Oct 28 13:36:20 GMT+03:00 2023
- Исполнена математическая операция - >>> Multiple of complex numbers
-result of Math Complex Numbers 0.0+13.0i
-Sat Oct 28 13:40:08 GMT+03:00 2023
- Исполнена математическая операция - >>> Summa of complex numbers 
-result of Math Complex Numbers 3.0+7.0i
-Sat Oct 28 13:56:30 GMT+03:00 2023
- Исполнена математическая операция - >>> Multiple of complex numbers
-result of Math Complex Numbers 7.0+26.0i
-Sat Oct 28 13:56:56 GMT+03:00 2023
- Исполнена математическая операция - >>> Summa of complex numbers 
-result of Math Complex Numbers 4.0+7.0i
-Sat Oct 28 14:04:17 GMT+03:00 2023
- Исполнена математическая операция - >>> Summa of complex numbers 
-result of Math Complex Numbers 6.0+0.0i
-Sat Oct 28 14:06:27 GMT+03:00 2023
- Исполнена математическая операция - >>> Multiple of complex numbers
-result of Math Complex Numbers Model.ComplexNumber@685f4c2e
-Sat Oct 28 14:08:55 GMT+03:00 2023
- Исполнена математическая операция - >>> Substract of complex numbers
-result of Math Complex Numbers 1.0+0.0i
-Sat Oct 28 14:14:48 GMT+03:00 2023
- Исполнена математическая операция - >>> Summa of complex numbers 
-result of Math Complex Numbers 4.0+8.0i
-Sat Oct 28 16:54:20 GMT+03:00 2023
- Исполнена математическая операция - >>> Summa of complex numbers 
-result of Math Complex Numbers 4.0+11.0i
-Sat Oct 28 16:59:20 GMT+03:00 2023
-Выполнена математическая операция: Multiple of complex numbers
-result of Math Complex Numbers -23.0+24.0i
-Sat Oct 28 17:02:38 GMT+03:00 2023
-Выполнена математическая операция: Разность комплексных чисел
-result of Math Complex Numbers -1.0-2.0i
-Sat Oct 28 17:05:46 GMT+03:00 2023
+Sat Oct 28 17:05:46 GMT+03:00 2023
 Выполнена математическая операция: Сумма комплексных чисел
 Результат: 4.0+4.0i
-
+
