@@ -5,22 +5,21 @@ public class ComplexNumber {
         private double real;
         private double imagine;
 
-        public ComplexNumber(){
+        public ComplexNumber()
+        {
             real = 0.0;
             imagine = 0.0;
         }
 
-        public ComplexNumber(double real, double imagine) {
+        public ComplexNumber(double real, double imagine) 
+        {
             this.real = real;
             this.imagine = imagine;
         }
-        public void add(ComplexNumber x){
-            set(add(this, x));
-        }
+        
+        public void add(ComplexNumber x){set(add(this, x));}
 
-        public void substract(ComplexNumber x){
-            set(substract(this, x));
-        }
+        public void substract(ComplexNumber x){set(substract(this, x));}
 
         public void multiple(ComplexNumber x){set(multiple(this,x));}
 
@@ -39,9 +38,10 @@ public class ComplexNumber {
         {
             return new ComplexNumber(x1.real - x2.real, x1.imagine - x2.imagine);
         }
-        public static ComplexNumber multiple(ComplexNumber x1, ComplexNumber x2){
+        
+        public static ComplexNumber multiple(ComplexNumber x1, ComplexNumber x2)
+        {
             return new ComplexNumber(x1.real * x2.real - x1.imagine * x2.imagine, x1.real* x2.imagine + x1.imagine * x2.real);
-
         }
 
         @Override
@@ -55,14 +55,10 @@ public class ComplexNumber {
                 im = "+"+this.imagine+"i";
             return re+im;
         }
-        public double getRe()
-        {
-            return this.real;
-        }
-        public double getIm()
-        {
-            return this.imagine;
-        }
+        
+        public double getRe(){return this.real;}
+        public double getIm(){return this.imagine;}
+        
 }
 
 
