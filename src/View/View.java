@@ -42,7 +42,7 @@ public final class View {
             try {
                 loger.loger1("Сумма комплексных чисел", add);
             } catch (IOException e) {
-                 e.getMessage();
+                System.out.println(e.getMessage());
             }
         }
         if (swt == 2) {
@@ -52,7 +52,7 @@ public final class View {
             try {
                 loger.loger1("Разность комплексных чисел", substract);
             } catch (IOException e) {
-                e.getMessage();
+                 System.out.println(e.getMessage());
             }
         }
         if (swt == 3) {
@@ -62,7 +62,7 @@ public final class View {
             try {
                 loger.loger1("Произведение комплексных чисел", multiple);
             } catch (IOException e) {
-                e.getMessage();
+                System.out.println(e.getMessage());
             }
         }
     }
