@@ -5,9 +5,7 @@ import Loger.Loger;
 import java.io.IOException;
 import java.util.Scanner;
 
-
 public class View {
-
     public void Calc() {
         Loger loger = new Loger();
 
