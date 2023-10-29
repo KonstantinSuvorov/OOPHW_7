@@ -5,8 +5,7 @@ public class ComplexNumber {
         private double real;
         private double imagine;
 
-        public ComplexNumber()
-        {
+        public ComplexNumber(){
             real = 0.0;
             imagine = 0.0;
         }
