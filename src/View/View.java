@@ -1,11 +1,13 @@
 package View;
 
 import Loger.Loger;
+import Model.ComplexNumber;
 
 import java.io.IOException;
 import java.util.Scanner;
 
-public class View {
+public final class View {
+
     public void Calc() {
         Loger loger = new Loger();
 
@@ -17,7 +19,7 @@ public class View {
         System.out.println("- мнимая часть: ");
         double im = scanner.nextDouble();
 
-        Model.ComplexNumber a = new Model.ComplexNumber(re, im);
+        ComplexNumber a = new ComplexNumber(re, im);
 
         System.out.println("Введите 2-е комплекcное число ");
         System.out.println("- вещественная часть: ");
@@ -25,7 +27,7 @@ public class View {
         System.out.println("- мнимая часть:  ");
         double im1 = scanner.nextDouble();
 
-        Model.ComplexNumber b = new Model.ComplexNumber(re1, im1);
+        ComplexNumber b = new ComplexNumber(re1, im1);
 
         System.out.println("Выберите действие над комплексными числами");
         System.out.println("1 - Сложение ");
@@ -34,31 +36,31 @@ public class View {
 
         int swt = scanner.nextInt();
         if (swt == 1) {
-            Model.ComplexNumber.add(a, b);
+            var add = ComplexNumber.add(a, b);
             System.out.println("Сумма комплексных чисел: ");
-            System.out.println(a.toString() + " + " + b.toString() + " = " + Model.ComplexNumber.add(a, b).toString());
+            System.out.println(a + " + " + b + " = " + add);
             try {
-                loger.loger1("Сумма комплексных чисел", Model.ComplexNumber.add(a, b));
+                loger.loger1("Сумма комплексных чисел", add);
             } catch (IOException e) {
-                e.getMessage();
+                 e.getMessage();
             }
         }
         if (swt == 2) {
-            Model.ComplexNumber.substract(a, b);
+            var substract = ComplexNumber.substract(a, b);
             System.out.println("Разность комплексных чисел: ");
-            System.out.println(a.toString() + " - " + b.toString() + " = " + Model.ComplexNumber.substract(a, b).toString());
+            System.out.println(a + " - " + b + " = " + substract);
             try {
-                loger.loger1("Разность комплексных чисел", Model.ComplexNumber.substract(a, b));
+                loger.loger1("Разность комплексных чисел", substract);
             } catch (IOException e) {
                 e.getMessage();
             }
         }
         if (swt == 3) {
-            Model.ComplexNumber.multiple(a, b);
+            var multiple = ComplexNumber.multiple(a, b);
             System.out.println("Произведение комплексных чисел: ");
-            System.out.println(a.toString() + " * " + b.toString() + " = " + Model.ComplexNumber.multiple(a, b).toString());
+            System.out.println(a + " * " + b + " = " + multiple);
             try {
-                loger.loger1("Произведение комплексных чисел", Model.ComplexNumber.multiple(a, b));
+                loger.loger1("Произведение комплексных чисел", multiple);
             } catch (IOException e) {
                 e.getMessage();
             }
